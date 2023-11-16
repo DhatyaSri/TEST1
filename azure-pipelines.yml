@@ -8,7 +8,7 @@ trigger:
 
 pool:
   vmImage: ubuntu-latest
-  #35614
+
 
 steps:
 - script: echo Hello, world!
