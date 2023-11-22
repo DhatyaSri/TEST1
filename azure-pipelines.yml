@@ -5,8 +5,8 @@
 
 trigger:
   - Main
-variables:
-- group: transformer_loading_cicd_lib
+#variables:
+#- group: transformer_loading_cicd_lib
 stages:
 - stage: prodBundleCD
   displayName: "Prod bundle deployment"
