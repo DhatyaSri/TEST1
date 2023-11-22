@@ -24,4 +24,4 @@ stages:
       displayName: 'Install Databricks CLI'
       inputs:
         script: |
-         shellCopy codecurl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | bash
+         shellCopy codecurl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
