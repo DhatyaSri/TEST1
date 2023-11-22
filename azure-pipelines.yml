@@ -24,4 +24,4 @@ stages:
       displayName: 'Install Databricks CLI'
       inputs:
         script: |
-          curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
+         sudo curl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sudo sh
