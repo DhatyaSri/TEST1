@@ -14,7 +14,7 @@ stages:
   - job: prodBundleCD
     displayName: "Prod bundle deployment"
     pool:
-     vmImage: windows-latest
+     name: Default
     steps:
     #- task: '6d15af64-176c-496d-b583-fd2ae21d4df4@1'
      # inputs:
