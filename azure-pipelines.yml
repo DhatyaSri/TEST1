@@ -4,24 +4,16 @@
 # https://aka.ms/yaml
 
 trigger:
-  - Main
-#variables:
-#- group: transformer_loading_cicd_lib
-stages:
-- stage: prodBundleCD
-  displayName: "Prod bundle deployment"
-  jobs:
-  - job: prodBundleCD
-    displayName: "Prod bundle deployment"
-    pool:
-     name: Default
-    steps:
-    #- task: '6d15af64-176c-496d-b583-fd2ae21d4df4@1'
-     # inputs:
-      #  repository: self
-       # persistCredentials: true
-    - task: CmdLine@2
-      displayName: 'Install Databricks CLI'
-      inputs:
-        script: |
-         shellCopy codecurl -fsSL https://raw.githubusercontent.com/databricks/setup-cli/main/install.sh | sh
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo Hello, world!
+  displayName: 'Run a one-line script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
